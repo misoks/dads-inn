@@ -1,0 +1,6 @@
+CREATE TABLE Dads(
+dad_id INT AUTO_INCREMENT PRIMARY KEY,
+dad_name VARCHAR(128) NOT NULL,
+age INT NOT NULL,
+img_path VARCHAR(2000), 
+reason TEXT );
