@@ -23,23 +23,20 @@ session_start();
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <?php 
-        $title_short = str_replace(' ', '-', $page_title);
-        echo "<body>"; 
-    ?>
+    <body>
     <div class="container">
     <header class="page-header">
-        <img src="images/dadsinn.png" class="banner" alt="Dads Inn">
+        <a href="index.php"><img src="css/dadsinn.png" class="banner" alt="Dads Inn"></a>
         <ul class="nav nav--main">
             <?php
                 $tab = "\t\t\t";
                 echo '<li class="nav__link nav--main__link">'.navLink('index.php', 'Home')."\n";
                 echo $tab.'<li class="nav__link nav--main__link">'.navLink('residents.php', 'Residents')."\n";
+                echo $tab.'<li class="nav__link nav--main__link">'.navLink('events.php', 'Events')."\n";
             ?>
         </ul>
     </header>
-    
+        <?php echo "<section class='page-content page-content--$page_class'>"; ?>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <h1><?php echo $page_title; ?></h1>

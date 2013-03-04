@@ -1,11 +1,14 @@
 <?php 
     $page_title = "Residents";
+    $page_class = "residents page-width--wide";
     include_once("header.php");
 ?>
 
 <?php
 
 ?>
+
+<h1>Residents</h1>
 
 <p>Here are the dads currently residing in the Dads Inn.</p>
 <ul class="resident-index">

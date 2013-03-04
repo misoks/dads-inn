@@ -1,3 +1,8 @@
+        </section>
+        <footer class="page-footer">
+            All content copyright your dad. This site is not affiliated in any way with the
+            actual Dad's Inn.
+        </footer>
         </div>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

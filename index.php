@@ -1,5 +1,6 @@
 <?php 
     $page_title = "Metro Lansing's #1 repository for used, damaged, or unwanted dads!";
+    $page_class = "home page-width--narrow";
     include_once("header.php");
 ?>
 
@@ -10,34 +11,41 @@
         isset($_FILES['filename']['name']) ) 
         {
             add_dad();
+            echo "<p>Dad added!</p>";
         }
+    else {
 ?>
 
-<p>Welcome to the Dads Inn! We hope you'll entrust your dad to us.</p>
+<h2>Welcome to the Dads Inn! We hope you'll entrust your dad to us.</h2>
 
-<form method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data" action="index.php">
         <table>
             <tr>
-                <td class="label">Dad Name:</td>
-                <td class="input"><input type="text" name="dad_name"></td>
+                <td class="label">Dad Name</td>
+                <td class="field-cell"><input type="text" name="dad_name" class="field field--name"></td>
             </tr>
             <tr>
-                <td class="label">Age:</td>
-                <td class="input"><input type="text" name="age"></td>
+                <td class="label">Age</td>
+                <td class="field-cell"><input type="text" name="age" class="field field--age"></td>
             </tr>
             <tr>
-                <td class="label">Reason:</td>
-                <td class="input"><input type="text" name="reason"></td>
+                <td class="label">Reason</td>
+                <td class="field-cell"><textarea name="reason" class="field field--reason"></textarea></td>
             </tr>
             <tr>
-                <td class="label">Image:</td>
-                <td class="input"><input type="file" name="filename" size="10" />
+                <td class="label">Image</td>
+                <td class="field-cell"><input type="file" name="filename" class="field field--image">
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Add Dad" class="button--add-dad"></td>
             </tr>
         </table>
-        <input type="submit" value="Add Dad"/>
+        
     </form>
 
 
 <?php 
+}
     include_once("footer.php");
 ?>
