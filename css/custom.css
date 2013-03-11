@@ -2,7 +2,7 @@
 
 body {
     font-size: 16px;
-    color: rgb(116, 89, 79);
+    color: black;
     background-image: url('bg.jpg');
     background-size: 100%;
     background-attachment: fixed;
@@ -17,8 +17,9 @@ a:visited {
 a:hover {
     color: yellow;
 }
-h1,h2,h3,h4 {
-    color: rgba(0,0,0,.5);
+h1, h2, h3, h4, h5 {
+    color: rgba(0,0,0,.7);
+    margin-bottom: .2em;
 }
 img {
     width: auto;
@@ -37,11 +38,17 @@ img {
     position: relative;
 }
     .page-content {
-        background-color: rgba(255,255,255,.9);
-        padding: 20px;
+        background-color: rgba(255,255,255,1);
+        padding: 30px 20px;
         margin-bottom: 50px;
         border-radius: 10px;
         box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    }
+    .page-content > *:first-child {
+        margin-top: 0;
+    }
+    .page-content >*:last-child {
+        margin-bottom: 0;
     }
         .page-width--narrow {
             width: 400px;
@@ -85,7 +92,7 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     font-size: .9em;
-    color: #ddd;
+    color: #999;
     width: 90px;
     text-align: right;
     padding-right: 5px;
@@ -141,3 +148,6 @@ img {
                 width: 200px;
                 height: auto;
             }
+        .dad__notes {
+            margin: 0;
+        }

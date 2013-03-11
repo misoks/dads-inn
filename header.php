@@ -18,6 +18,7 @@ session_start();
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/taf-swissface-l.css">
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/helpers.css">
 
