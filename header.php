@@ -32,6 +32,7 @@ session_start();
             <?php
                 $tab = "\t\t\t";
                 echo '<li class="nav__link nav--main__link">'.navLink('index.php', 'Home')."\n";
+                echo $tab.'<li class="nav__link nav--main__link">'.navLink('about.php', 'About')."\n";
                 echo $tab.'<li class="nav__link nav--main__link">'.navLink('residents.php', 'Residents')."\n";
                 echo $tab.'<li class="nav__link nav--main__link">'.navLink('events.php', 'Events')."\n";
             ?>
