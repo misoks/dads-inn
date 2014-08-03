@@ -143,10 +143,14 @@ img {
             border-radius: 10px;
             vertical-align: middle;
             text-align: center;
+            position: relative;
         }
             .dad__image img {
-                width: 200px;
-                height: auto;
+                position: absolute;
+                left: -50%;
+                margin-left: 100px;
+                min-width: 200px;
+                min-height: 200px;
             }
         .dad__notes {
             margin: 0;
